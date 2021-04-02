@@ -1,0 +1,9 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Jack",
+    "StartYear": 2016,
+    "EndYear": 2013,
+    "GPARecord": [ 3.4, 2.1, 1.2, 3.6 ]
+  }
+]
