@@ -7,6 +7,7 @@ using Moq;
 using SertifiTestApi.Clients;
 using SertifiTestApi.Models;
 using SertifiTestApi.Services;
+using SertifiTestApi.Tests.Utils;
 using Xunit;
 
 namespace SertifiTestApi.Tests.Services
