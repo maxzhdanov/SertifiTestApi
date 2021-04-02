@@ -10,7 +10,7 @@ using SertifiTestApi.Clients;
 using SertifiTestApi.Models;
 using Xunit;
 
-namespace SertifiTestApi.Tests.Services
+namespace SertifiTestApi.Tests.Clients
 {
     public class SertifiHttpClientTests
     {
