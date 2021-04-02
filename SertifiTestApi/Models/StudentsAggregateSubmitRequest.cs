@@ -7,10 +7,10 @@ namespace SertifiTestApi.Models
     public class StudentsAggregateSubmitRequest
     {
         [Required]
-        public string Name { get; set; }
+        public string YourName { get; set; }
         [Required]
         [EmailRegularExpression]
-        public string Email { get; set; }
+        public string YourEmail { get; set; }
         [Required]
         public int YearWithHighestAttendance { get; set; }
         [Required]

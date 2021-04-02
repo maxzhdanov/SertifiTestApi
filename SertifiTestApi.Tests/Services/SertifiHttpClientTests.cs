@@ -91,8 +91,8 @@ namespace SertifiTestApi.Tests.Services
 
             var result = await service.SubmitAggregate(new StudentsAggregateSubmitRequest
             {
-                Name = "Subm Itter",
-                Email = "submitter@test.com",
+                YourName = "Subm Itter",
+                YourEmail = "submitter@test.com",
                 YearWithHighestAttendance = 2999,
                 YearWithHighestAverageGpa = 2999,
                 Top10StudentIdsWithHighestGpa = new List<int> { 3, 2, 3 },

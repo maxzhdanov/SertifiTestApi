@@ -37,8 +37,8 @@ namespace SertifiTestApi.Tests.Controllers
             // arrange
             var record = new StudentsAggregateSubmitRequest
             {
-                Name = "Subm Itter",
-                Email = "submitter@test.com",
+                YourName = "Subm Itter",
+                YourEmail = "submitter@test.com",
                 YearWithHighestAttendance = 2999,
                 YearWithHighestAverageGpa = 2999,
                 Top10StudentIdsWithHighestGpa = new List<int> { 3, 2, 3 },
@@ -65,8 +65,8 @@ namespace SertifiTestApi.Tests.Controllers
             // arrange
             var record = new StudentsAggregateSubmitRequest
             {
-                Name = "",
-                Email = "submitter@test",
+                YourName = "",
+                YourEmail = "submitter@test",
                 YearWithHighestAttendance = 2999,
                 YearWithHighestAverageGpa = 2999,
                 StudentIdMostInconsistent = 1
@@ -84,7 +84,7 @@ namespace SertifiTestApi.Tests.Controllers
             response.StatusCode.Should().Be(400);
             var raw = await response.Content.ReadAsStringAsync();
             
-            Assert.Contains("The Name field is required.", raw);
+            Assert.Contains("The YourName field is required.", raw);
             Assert.Contains("The Top10StudentIdsWithHighestGpa field is required.", raw);
             Assert.Contains("[submitter@test] is not a valid email.", raw);
         }
